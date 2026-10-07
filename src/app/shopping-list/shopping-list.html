@@ -1,0 +1,14 @@
+<section aria-labelledby="shopping-list-title">
+  <h2 id="shopping-list-title">Articles ajoutés</h2>
+  <ul>
+    @for (item of items; track $index) {
+      <li>
+        <span>{{ item }}</span>
+        <button type="button" (click)="requestDelete($index)"
+          [attr.aria-label]="'Supprimer ' + item">Supprimer</button>
+      </li>
+    } @empty {
+      <li class="empty">Votre liste est vide.</li>
+    }
+  </ul>
+</section>
