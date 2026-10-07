@@ -19,7 +19,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Shopping List');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Ma liste de courses');
   });
 
   it('should add multiple articles through the form and delete only the middle article', async () => {

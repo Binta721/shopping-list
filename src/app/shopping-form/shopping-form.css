@@ -1,0 +1,8 @@
+﻿label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+.shopping-form { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 14px 16px; border: 1px solid #dce4d9; border-radius: 10px; background: #fafbf8; color: #24382c; }
+input::placeholder { color: #8a968b; }
+input:focus { border-color: #64816d; background: white; }
+button { border: 0; border-radius: 10px; padding: 14px 20px; background: #356447; color: white; font-weight: 600; cursor: pointer; }
+button:hover { background: #284e36; }
+@media (max-width: 400px) { .shopping-form { flex-direction: column; } }

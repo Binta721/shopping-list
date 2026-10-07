@@ -1,9 +1,5 @@
-<div class="shopping-form">
-  <input
-    type="text"
-    [(ngModel)]="itemName"
-    placeholder="Ajouter un item"
-  >
-
-  <button (click)="addItem()">Ajouter</button>
-</div>
+﻿<label for="item-name">Ajouter un article</label>
+<form class="shopping-form" (ngSubmit)="addItem()">
+  <input type="text" id="item-name" name="itemName" [(ngModel)]="itemName" placeholder="Ex. : 5 pommes, du pain…">
+  <button type="submit">+ Ajouter</button>
+</form>

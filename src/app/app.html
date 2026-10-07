@@ -1,4 +1,10 @@
-<h1>Shopping List</h1>
-
-<app-shopping-form (itemAdded)="onAddItem($event)"></app-shopping-form>
-<app-shopping-list [items]="items" (removeItem)="onRemoveItem($event)"></app-shopping-list>
+﻿<main class="shopping-card">
+  <header>
+    <div class="eyebrow">LE PETIT MÉMO DU QUOTIDIEN</div>
+    <h1>Ma liste de courses</h1>
+    <p>Tout ce qu’il vous faut, au même endroit.</p>
+  </header>
+  <app-shopping-form (itemAdded)="onAddItem($event)"></app-shopping-form>
+  <app-shopping-list [items]="items" (removeItem)="onRemoveItem($event)"></app-shopping-list>
+  <footer>Un article à la fois, et rien d’oublié.</footer>
+</main>

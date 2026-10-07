@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+﻿* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f3f5ef; color: #24382c; font-family: 'Segoe UI', Arial, sans-serif; }
+button, input { font: inherit; transition: background-color .15s, border-color .15s; }
+:focus-visible { outline: 3px solid #89b698; outline-offset: 3px; }
